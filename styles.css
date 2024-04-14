@@ -1,0 +1,31 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    
+}
+body
+{
+    background-color: rgb(7, 236, 225);
+}
+.parent
+{
+ padding: 2rem;
+}
+.textcenter{
+    text-align: center;
+}
+.btn{
+    cursor: pointer;
+}
+
+.card
+{
+ width: 300px;
+ height: 360px;
+ border: 2px solid black;
+ margin: 2rem;
+ background-color: rgb(5, 12, 10);
+ color: white;
+ 
+}
