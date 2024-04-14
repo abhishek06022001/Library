@@ -29,3 +29,10 @@ body
  color: white;
  
 }
+/* Add this CSS to your existing styles.css or inline style */
+dialog {
+    margin: auto;
+    padding: 0;
+    width: 300px; /* Adjust width as needed */
+    height: 300px; /* Adjust height as needed */
+}

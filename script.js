@@ -13,21 +13,25 @@ Book.prototype.toggleRead = function()
     this.read = !this.read;
  
 }
-let newBookbtn = document.querySelector("#new-book-btn");
+const bookModal = document.getElementById('favDialog');
+const newBookbtn = document.querySelector("#new-book-btn");
 newBookbtn.addEventListener('click',function(event){
     // alert("hey");
-    toggleModal();
+   
+    // toggleModal();
+    bookModal.showModal();
 })
 function addBookToLibrary() {
   // do stuff here
-  toggleModal();
+//   toggleModal();
   let Title= document.querySelector("#title").value;
   let Pages= document.querySelector("#pages").value;
   let Read= document.querySelector("#read").checked;
   let newBook = new Book(Title,Pages,Read);
      myLibrary.push(newBook);
+     bookModal.close();
      render();
-  console.log(myLibrary);
+//   console.log(myLibrary);
 }
 function toggleModal()
 {
@@ -43,7 +47,7 @@ function toggleModal()
 document.querySelector("#new-book-form").addEventListener('submit',function(event){
     event.preventDefault();
     // console.log(event);
-    alert("submit pressed");
+    // alert("submit pressed");
 
     addBookToLibrary();
 })
