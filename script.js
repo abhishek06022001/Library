@@ -18,7 +18,12 @@ const newBookbtn = document.querySelector("#new-book-btn");
 newBookbtn.addEventListener('click',function(event){
     // alert("hey");
    
-    // toggleModal();
+    // toggleModal();let Title= document.querySelector("#title").value;
+ document.querySelector("#pages").value= '';
+ document.querySelector("#read").checked = false;
+ document.querySelector("#title").value = ''; 
+
+
     bookModal.showModal();
 })
 function addBookToLibrary() {
